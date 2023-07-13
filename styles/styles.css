@@ -1,0 +1,341 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url("../images/background.jpg");
+}
+
+/* set global font and background image*/
+
+.container {
+    background-color: white;
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
+}
+
+/* used to contain all elements onto white background */
+
+.logoimg {
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding: 20px;
+}
+
+/* for resizing the image used in the header */
+
+.logotext {
+    font-weight: lighter;
+    padding-top: 30px;
+    padding-left: 150px;
+}
+
+/* for resizing the text used in the header */
+
+nav {
+    border: #ffffff;
+    border-bottom: #266daf;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    font-size: 16pt;
+
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #272727;
+    padding: 14px 30px;
+    text-decoration: none;
+    background-color: #c0e0ff;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+nav li a:hover {
+    background-color: #3075b4;
+    color: white;
+}
+
+/* Navigation bar design ^ contextual css used here*/
+
+.referencing {
+    color: #272727;
+}
+
+/* used for all anchor elements that provide a reference link */
+
+.grid-container,
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto 40%;
+    padding: 50px;
+    column-gap: 50px;
+}
+
+/* grid container is used throughout the website to 
+    align the elements of each page onto a grid. */
+
+.grid-container2 {
+    grid-template-columns: auto auto;
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
+/* used on the job listing page to have an even grid */
+
+.grid-item,
+.indexboxw,
+.indexbox2 {
+    background-color: #266daf;
+    border-radius: 20px;
+    padding: 50px;
+    color: white;
+}
+
+/* indexboxs are used to stylize each box on the index*/
+
+#indeximage {
+    width: min-content;
+    min-width: 100px;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+/* resize image used on index page */
+
+.indexbox1,
+.indexbox2 {
+    background-color: white;
+    color: #272727;
+    text-align: center;
+}
+
+/* used to recolour the background of the image container on the index page */
+
+.indexbox2,
+.indexbox3 {
+    background-color: #c0e0ff;
+}
+
+/* used to recolour the background of the contact us container on the index page */
+
+.indexbox3 {
+    color: #272727;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* used to recolour the background of the contact us container on the job listings page */
+
+.formbox {
+
+    margin: 50px;
+
+    text-align: center;
+}
+
+/* used on the forms page */
+
+form {
+    width: 60%;
+    text-align: left;
+    margin: auto;
+    background-color: #c0e0ff;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+footer {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: #ffffff;
+    border-top: #266daf;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+/* used for footer */
+
+.button1 {
+    background-color: #266daf;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100px;
+}
+
+/* used to stylize various buttons on lighter backgrounds */
+
+.button1:hover {
+    border-color: rgb(237, 237, 237);
+    background-color: white;
+    color: #266daf;
+}
+
+.button2 {
+    background-color: white;
+    border: none;
+    color: #266daf;
+    padding: 5px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100px;
+}
+
+/* used to stylize various buttons on darker backgrounds */
+
+.button2:hover {
+    border-color: #c0e0ff;
+    background-color: #15395d;
+    color: #c0e0ff;
+}
+
+aside {
+    width: 25%;
+    float: right;
+    background-color: white;
+    border: #3075b4;
+    border-radius: 20px;
+    border-style: solid;
+    margin: 50px;
+    margin-left: 0;
+    padding: 30px;
+}
+
+/* used on job listings page */
+
+h1 {
+    font: small-caps 30px 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* used on the job listings page */
+
+label {
+    padding: 5px;
+    margin: 5px;
+}
+
+/* used to stylize the labels on the forms page*/
+
+input,
+select {
+    width: 200px;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #266daf;
+    margin: 5px;
+    border-width: 1px;
+}
+
+/* used to stylize the input bars on the index page and on the forms page*/
+
+textarea {
+    width: 250px;
+    height: 30px;
+    box-sizing: border-box;
+    border-color: #266daf;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    resize: none;
+}
+
+/* used to stylize the textarea on the index page and on the forms page*/
+
+input[type=radio],
+input[type=checkbox] {
+    margin-right: -100px;
+}
+
+/* used to move the label closer to the inputs on the forms page*/
+
+dt {
+    float: left;
+    clear: left;
+    width: 200px;
+    font-weight: bold;
+    color: #15395d;
+}
+
+dt::after {
+    content: ":";
+}
+
+dd {
+    margin: 0 0 0 80px;
+    padding: 0 0 0.5em 0;
+}
+
+/* used to stylize the definition list on the about me page*/
+
+.infocontainer, .infocontainer2 {
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px;
+    width: 70%;
+    text-align: left;
+    background-color: #c0e0ff;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+.infocontainer2{
+    background-color: white;
+}
+
+/*used to group student information on about me page*/
+
+#imageofme {
+    float: right;
+    width: 300px;
+    margin-right: 20px;
+    border: 5px solid #266daf;
+    border-radius: 20px;
+}
+
+/*used to size and float the image of myself on the about page*/
+
+table,td,th {
+    border: 1px solid;
+    padding: 2px;
+    background-color: #a9d4ff;
+}
+
+th {
+    font-weight: bold;
+    background-color: #6db0ef;
+}
+
+tr {
+    height: 40px;
+}
+
+.session{
+    background-color: #83c3ff;
+    color: #272727;
+    border: 2px solid;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}

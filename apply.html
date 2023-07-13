@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Page</title>
+    <link href="../styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="../images/logo.jpg" alt="a picture of the company logo" class="logoimg">
+            <h1 class="logotext">Level Up Games</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../jobs.html">Job Vacancies</a></li>
+                    <li><a href="../apply.html">Apply Here</a></li>
+                    <li><a href="../about.html">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="formbox">
+            <h2>Application Form</h2>
+            <form>
+                <label for="refno">Job Reference No.:</label>
+                <select name="refno" id="refno">
+                    <option value="IGD01">IGD01</option>
+                    <option value="JGD01">JGD01</option>
+                    <option value="VGS01 ">VGS01 </option>
+                    <option value="SMA01">SMA01</option>
+                </select>
+
+                <br>
+
+                <fieldset>
+                    <legend>Personal Information:</legend>
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" id="fname" maxlength="20" required>
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" id="lname" maxlength="20" required>
+
+                    <br>
+
+                    <label for="date">Date of Birth:</label>
+                    <input type="date" name="date" id="date" required>
+                    <fieldset>
+                        <legend>Gender:</legend>
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label><br>
+                    </fieldset>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Address:</legend>
+                    <label for="streetaddress">Street Address:</label>
+                    <textarea name="streetaddress" id="streetaddress" rows="2" cols="30" maxlength="40"
+                        required></textarea>
+
+                    <label for="suburbtown">Suburb/Town:</label>
+                    <input type="text" name="suburbtown" id="suburbtown" maxlength="40" required><br>
+
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="select">Select a State</option>
+                        <option value="Johor">Johor</option>
+                        <option value="Kedah">Kedah</option>
+                        <option value="Kelantan">Kelantan</option>
+                        <option value="Malacca">Malacca</option>
+                        <option value="Negeri Sembilan">Negeri Sembilan</option>
+                        <option value="Pahang">Pahang</option>
+                        <option value="Penang">Penang</option>
+                        <option value="Perak">Perak</option>
+                        <option value="Perlis">Perlis</option>
+                        <option value="Sabah">Sabah</option>
+                        <option value="Sarawak">Sarawak</option>
+                        <option value="Selangor">Selangor</option>
+                        <option value="Terengganu">Terengganu</option>
+                        <option value="Kuala Lumpur">Kuala Lumpur</option>
+                        <option value="Labuan">Labuan</option>
+                        <option value="Putrajaya">Putrajaya</option>
+                    </select>
+
+                    <label for="postcode">Postcode</label>
+                    <input type="number" name="postcode" id="postcode" max="99999" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact Information:</legend>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" required placeholder="example@gmail.com">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="number" name="phone" id="phone" max="99999999999" required placeholder="xxx-xxxxxxxx">
+                </fieldset>
+
+                <fieldset class="formskills">
+                    <legend>Skills:</legend>
+                    <input type="checkbox" id="skill1" name="skill1" value="">
+                    <label for="skill1">Good at Programming</label><br>
+                    <input type="checkbox" id="skill2" name="skill2" value="">
+                    <label for="skill2">Able to collaborate with co-workers well</label><br>
+                    <input type="checkbox" id="skill3" name="skill3" value="">
+                    <label for="skill3">Great at problem solving</label><br>
+                    <input type="checkbox" id="skill4" name="skill4" value="">
+                    <label for="skill4">Other skills:</label><br>
+
+                    <label for="otherskills">Other Skills:</label>
+                    <textarea name="otherskills" id="otherskills" rows="2" cols="30"></textarea>
+                </fieldset>
+
+                <input type="submit" value="Apply" class="button1">
+            </form>
+        </section>
+        <footer>
+            Copyright © Gan Hoong Lee. All rights reserved.
+            <a
+                href="https://www.freepik.com/premium-vector/colorful-memphis-pattern_22438615.htm#page=4&query=game%20patterns&position=33&from_view=keyword&track=ais">Background
+                Image Reference</a>
+            <a href="https://icon-library.com/icon/free-game-icon-18.html">Header Icon Image Reference</a>
+        </footer>
+    </div>
+</body>
+
+</html>
